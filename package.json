@@ -12,7 +12,11 @@
     "dev:tsm": "typed-scss-modules src --watch --implementation sass --nameFormat kebab --exportType default"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.5.5",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "axios": "^1.1.2",
+    "framer-motion": "^10.12.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2",
