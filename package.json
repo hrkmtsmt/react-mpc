@@ -1,0 +1,40 @@
+{
+  "name": "react-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"yarn dev:serve\" \"yarn dev:tsm\"",
+    "test": "vitest",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "dev:serve": "vite --host localhost --port 8080",
+    "dev:tsm": "typed-scss-modules src --watch --implementation sass --nameFormat kebab --exportType default"
+  },
+  "dependencies": {
+    "axios": "^1.1.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.2",
+    "recoil": "^0.7.5",
+    "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@types/node": "^18.8.3",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^3.0.0",
+    "concurrently": "^7.4.0",
+    "eslint": "^8.25.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jsdom": "^21.1.0",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typed-scss-modules": "^7.0.1",
+    "typescript": "^5.0.0",
+    "vite": "^4.0.0",
+    "vitest": "^0.29.2"
+  }
+}
